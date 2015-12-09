@@ -37,13 +37,13 @@ public class Counter {
 	public static void count(String file){
 		Scanner sc = null;
 		BufferedWriter bw = null;
-		HashMap<String,Integer> palabraSAuxiliar = new HashMap<>();
-		HashMap<String,Integer> palabraCAuxiliar = new HashMap<>();
+		HashMap<String,Integer> palabraSAuxiliar = new HashMap<String,Integer>();
+		HashMap<String,Integer> palabraCAuxiliar = new HashMap<String,Integer>();
 		ValueComparator bvc =  new ValueComparator(palabraSAuxiliar);
 		ValueComparator bvc2 =  new ValueComparator(palabraCAuxiliar);
 		TreeMap<String,Integer> sorted_map_SAuxiliar = new TreeMap<String,Integer>(bvc);
 		TreeMap<String,Integer> sorted_map_CAuxiliar = new TreeMap<String,Integer>(bvc2);
-		HashSet <String> pal = new HashSet <>();
+		HashSet <String> pal = new HashSet <String>();
 		StringTokenizer a;
 		String check;
 		Integer pCAuxiliar=0;
